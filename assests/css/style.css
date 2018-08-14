@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    background: #eeeeee;
+}
+.nav__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin;0
+}
+
+/* float fix */
+.nav__list:before, 
+.nav__list::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* float fix */
+
+.nav__list li {
+    display: inline-block;
+}
+
+.nav__right {
+    float:right;
+}
+
+.nav__left {
+    float: left;
+}
+
+.nav__link {
+    color: #222222;
+    display: block;
+    padding: 10px, 12px;
+    text-decoration: none;
+}
